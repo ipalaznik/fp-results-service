@@ -1,0 +1,32 @@
+f1 - Get the latest F1 Twitter posts
+fia - Get FIA
+redbull - Red Bull
+ferrari - Get Ferrari
+mercedes - Get Mercedes
+alpine - Get Alpine
+mclaren - Get McLaren
+alfaromeo - Get Alfa Romeo
+haas - Get Haas
+alphatauri - Get AlphaTauri
+williams - Get Williams
+lastfromaccount - get the latest posts from provided Tw-r account by link
+
+getmediatwitter - get media from single twitter post
+getmediafacebook - get media from single facebook post
+
+startrace - start polling live stats and generating images/lists to channel
+pauserace - redflag? longer polling?
+restartrace - green flag. faster polling or complete restart?
+finishrace - stop live stats polling
+
+# in-race commands (if they're really needed):
+addtimepenalty - add penalty seconds to driver's live time (as separate label near times)
+removetimepenalty - error fixing or removed penalty by judges
+yellowflag
+yellowflagend
+safetycar
+safetycarend
+virtualsafetycar
+virtualsafetycarend
+greenflag
+dnf - mark driver as DNF

@@ -1,0 +1,3175 @@
+{
+  "R": {
+    "TimingData": {
+      "Lines": {
+        "1": {
+          "TimeDiffToFastest": "",
+          "TimeDiffToPositionAhead": "",
+          "Line": 1,
+          "Position": "1",
+          "ShowPosition": true,
+          "RacingNumber": "1",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "52.657",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "52.657"
+            },
+            {
+              "Stopped": false,
+              "Value": "39.458",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "39.458"
+            },
+            {
+              "Stopped": false,
+              "Value": "26.031",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "26.031"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "268",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "246",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "284",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:28.600",
+            "Lap": 22
+          },
+          "LastLapTime": {
+            "Value": "1:58.146",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 26,
+          "NumberOfPitStops": 4
+        },
+        "2": {
+          "TimeDiffToFastest": "+1.524",
+          "TimeDiffToPositionAhead": "+0.032",
+          "Line": 17,
+          "Position": "17",
+          "ShowPosition": true,
+          "RacingNumber": "2",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "60.472",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "60.472"
+            },
+            {
+              "Stopped": false,
+              "Value": "42.124",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "42.124"
+            },
+            {
+              "Stopped": false,
+              "Value": "29.614",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "29.614"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "298",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "238",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "253",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:30.124",
+            "Lap": 10
+          },
+          "LastLapTime": {
+            "Value": "2:12.210",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 24,
+          "NumberOfPitStops": 5
+        },
+        "4": {
+          "TimeDiffToFastest": "+0.841",
+          "TimeDiffToPositionAhead": "+0.084",
+          "Line": 8,
+          "Position": "8",
+          "ShowPosition": true,
+          "RacingNumber": "4",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "55.797",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "55.797"
+            },
+            {
+              "Stopped": false,
+              "Value": "48.502",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "48.502"
+            },
+            {
+              "Stopped": false,
+              "Value": "26.232",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "26.232"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "291",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "235",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "277",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.441",
+            "Lap": 16
+          },
+          "LastLapTime": {
+            "Value": "2:10.531",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 25,
+          "NumberOfPitStops": 6
+        },
+        "10": {
+          "TimeDiffToFastest": "+1.228",
+          "TimeDiffToPositionAhead": "+0.060",
+          "Line": 13,
+          "Position": "13",
+          "ShowPosition": true,
+          "RacingNumber": "10",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "56.483",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "56.483"
+            },
+            {
+              "Stopped": false,
+              "Value": "38.468",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "38.468"
+            },
+            {
+              "Stopped": false,
+              "Value": "25.693",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "25.693"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "300",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "251",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "294",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.828",
+            "Lap": 13
+          },
+          "LastLapTime": {
+            "Value": "2:00.644",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 24,
+          "NumberOfPitStops": 4
+        },
+        "11": {
+          "TimeDiffToFastest": "+0.448",
+          "TimeDiffToPositionAhead": "+0.448",
+          "Line": 2,
+          "Position": "2",
+          "ShowPosition": true,
+          "RacingNumber": "11",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "61.823",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "61.823"
+            },
+            {
+              "Stopped": false,
+              "Value": "41.735",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "41.735"
+            },
+            {
+              "Stopped": false,
+              "Value": "30.884",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "30.884"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "264",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "176",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "204",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.048",
+            "Lap": 17
+          },
+          "LastLapTime": {
+            "Value": "2:14.442",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 22,
+          "NumberOfPitStops": 4
+        },
+        "14": {
+          "TimeDiffToFastest": "+0.668",
+          "TimeDiffToPositionAhead": "+0.179",
+          "Line": 4,
+          "Position": "4",
+          "ShowPosition": true,
+          "RacingNumber": "14",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "62.139",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "62.139"
+            },
+            {
+              "Stopped": false,
+              "Value": "59.383",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "59.383"
+            },
+            {
+              "Stopped": false,
+              "Value": "32.299",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "32.299"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "299",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "240",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "144",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.268",
+            "Lap": 14
+          },
+          "LastLapTime": {
+            "Value": "2:33.821",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 21,
+          "NumberOfPitStops": 3
+        },
+        "16": {
+          "TimeDiffToFastest": "+0.680",
+          "TimeDiffToPositionAhead": "+0.012",
+          "Line": 5,
+          "Position": "5",
+          "ShowPosition": true,
+          "RacingNumber": "16",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "61.538",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "61.538"
+            },
+            {
+              "Stopped": false,
+              "Value": "44.259",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "44.259"
+            },
+            {
+              "Stopped": false,
+              "Value": "26.740",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "26.740"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "304",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "229",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "260",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.280",
+            "Lap": 15
+          },
+          "LastLapTime": {
+            "Value": "2:12.537",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 25,
+          "NumberOfPitStops": 5
+        },
+        "18": {
+          "TimeDiffToFastest": "+0.871",
+          "TimeDiffToPositionAhead": "+0.030",
+          "Line": 9,
+          "Position": "9",
+          "ShowPosition": true,
+          "RacingNumber": "18",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "59.195",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "59.195"
+            },
+            {
+              "Stopped": false,
+              "Value": "42.177",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "42.177"
+            },
+            {
+              "Stopped": false,
+              "Value": "26.480",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "26.480"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "234",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "243",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "296",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.471",
+            "Lap": 21
+          },
+          "LastLapTime": {
+            "Value": "2:07.852",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 26,
+          "NumberOfPitStops": 4
+        },
+        "20": {
+          "TimeDiffToFastest": "+1.785",
+          "TimeDiffToPositionAhead": "+0.064",
+          "Line": 19,
+          "Position": "19",
+          "ShowPosition": true,
+          "RacingNumber": "20",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "58.045",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "58.045"
+            },
+            {
+              "Stopped": false,
+              "Value": "43.626",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "43.626"
+            },
+            {
+              "Stopped": false,
+              "Value": "26.834",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "26.834"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "305",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "226",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "279",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:30.385",
+            "Lap": 9
+          },
+          "LastLapTime": {
+            "Value": "2:08.505",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 21,
+          "NumberOfPitStops": 5
+        },
+        "21": {
+          "TimeDiffToFastest": "+1.091",
+          "TimeDiffToPositionAhead": "+0.033",
+          "Line": 11,
+          "Position": "11",
+          "ShowPosition": true,
+          "RacingNumber": "21",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "59.094",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "59.094"
+            },
+            {
+              "Stopped": false,
+              "Value": "38.976",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "38.976"
+            },
+            {
+              "Stopped": false,
+              "Value": "25.995",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "25.995"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "300",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "250",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "298",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.691",
+            "Lap": 17
+          },
+          "LastLapTime": {
+            "Value": "2:04.065",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 26,
+          "NumberOfPitStops": 5
+        },
+        "22": {
+          "TimeDiffToFastest": "+1.492",
+          "TimeDiffToPositionAhead": "+0.002",
+          "Line": 16,
+          "Position": "16",
+          "ShowPosition": true,
+          "RacingNumber": "22",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "56.678",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "56.678"
+            },
+            {
+              "Stopped": false,
+              "Value": "43.048",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "43.048"
+            },
+            {
+              "Stopped": false,
+              "Value": "29.454",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "29.454"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "289",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "238",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "220",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:30.092",
+            "Lap": 12
+          },
+          "LastLapTime": {
+            "Value": "2:09.180",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 28,
+          "NumberOfPitStops": 3
+        },
+        "23": {
+          "TimeDiffToFastest": "+0.489",
+          "TimeDiffToPositionAhead": "+0.041",
+          "Line": 3,
+          "Position": "3",
+          "ShowPosition": true,
+          "RacingNumber": "23",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "57.113",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "57.113"
+            },
+            {
+              "Stopped": false,
+              "Value": "39.241",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "39.241"
+            },
+            {
+              "Stopped": false,
+              "Value": "25.821",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "25.821"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "302",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "245",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "301",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.089",
+            "Lap": 16
+          },
+          "LastLapTime": {
+            "Value": "2:02.175",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 22,
+          "NumberOfPitStops": 9
+        },
+        "24": {
+          "TimeDiffToFastest": "+1.721",
+          "TimeDiffToPositionAhead": "+0.197",
+          "Line": 18,
+          "Position": "18",
+          "ShowPosition": true,
+          "RacingNumber": "24",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "52.398",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "52.398"
+            },
+            {
+              "Stopped": false,
+              "Value": "41.687",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "41.687"
+            },
+            {
+              "Stopped": false,
+              "Value": "27.730",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "27.730"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "299",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "226",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "276",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:30.321",
+            "Lap": 14
+          },
+          "LastLapTime": {
+            "Value": "2:01.815",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 20,
+          "NumberOfPitStops": 4
+        },
+        "27": {
+          "TimeDiffToFastest": "+1.991",
+          "TimeDiffToPositionAhead": "+0.206",
+          "Line": 20,
+          "Position": "20",
+          "ShowPosition": true,
+          "RacingNumber": "27",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "46.470",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "46.470"
+            },
+            {
+              "Stopped": false,
+              "Value": "41.756",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "41.756"
+            },
+            {
+              "Stopped": false,
+              "Value": "29.833",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "29.833"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "295",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "198",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "208",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:30.591",
+            "Lap": 12
+          },
+          "LastLapTime": {
+            "Value": "1:58.059",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 22,
+          "NumberOfPitStops": 4
+        },
+        "31": {
+          "TimeDiffToFastest": "+0.719",
+          "TimeDiffToPositionAhead": "+0.039",
+          "Line": 6,
+          "Position": "6",
+          "ShowPosition": true,
+          "RacingNumber": "31",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "54.648",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "54.648"
+            },
+            {
+              "Stopped": false,
+              "Value": "38.607",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "38.607"
+            },
+            {
+              "Stopped": false,
+              "Value": "26.471",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "26.471"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "303",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "253",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "299",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.319",
+            "Lap": 12
+          },
+          "LastLapTime": {
+            "Value": "1:59.726",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 23,
+          "NumberOfPitStops": 4
+        },
+        "44": {
+          "TimeDiffToFastest": "+1.168",
+          "TimeDiffToPositionAhead": "+0.077",
+          "Line": 12,
+          "Position": "12",
+          "ShowPosition": true,
+          "RacingNumber": "44",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "60.312",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "60.312"
+            },
+            {
+              "Stopped": false,
+              "Value": "39.391",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "39.391"
+            },
+            {
+              "Stopped": false,
+              "Value": "26.343",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "26.343"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "298",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "239",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "279",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.768",
+            "Lap": 19
+          },
+          "LastLapTime": {
+            "Value": "2:06.046",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 23,
+          "NumberOfPitStops": 5
+        },
+        "55": {
+          "TimeDiffToFastest": "+0.757",
+          "TimeDiffToPositionAhead": "+0.038",
+          "Line": 7,
+          "Position": "7",
+          "ShowPosition": true,
+          "RacingNumber": "55",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "70.207",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "70.207"
+            },
+            {
+              "Stopped": false,
+              "Value": "38.178",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "38.178"
+            },
+            {
+              "Stopped": false,
+              "Value": "25.509",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "25.509"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "296",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "252",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "299",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.357",
+            "Lap": 11
+          },
+          "LastLapTime": {
+            "Value": "2:13.894",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 25,
+          "NumberOfPitStops": 4
+        },
+        "63": {
+          "TimeDiffToFastest": "+1.274",
+          "TimeDiffToPositionAhead": "+0.046",
+          "Line": 14,
+          "Position": "14",
+          "ShowPosition": true,
+          "RacingNumber": "63",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "59.179",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "59.179"
+            },
+            {
+              "Stopped": false,
+              "Value": "38.961",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "38.961"
+            },
+            {
+              "Stopped": false,
+              "Value": "25.733",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "25.733"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "308",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "247",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "316",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.874",
+            "Lap": 20
+          },
+          "LastLapTime": {
+            "Value": "2:03.873",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 28,
+          "NumberOfPitStops": 5
+        },
+        "77": {
+          "TimeDiffToFastest": "+1.490",
+          "TimeDiffToPositionAhead": "+0.216",
+          "Line": 15,
+          "Position": "15",
+          "ShowPosition": true,
+          "RacingNumber": "77",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 1104,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "50.811",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "50.811"
+            },
+            {
+              "Stopped": false,
+              "Value": "43.359",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "43.359"
+            },
+            {
+              "Stopped": false,
+              "Value": "30.555",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "30.555"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "304",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "147",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "245",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:30.090",
+            "Lap": 14
+          },
+          "LastLapTime": {
+            "Value": "2:04.725",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 22,
+          "NumberOfPitStops": 4
+        },
+        "81": {
+          "TimeDiffToFastest": "+1.058",
+          "TimeDiffToPositionAhead": "+0.187",
+          "Line": 10,
+          "Position": "10",
+          "ShowPosition": true,
+          "RacingNumber": "81",
+          "Retired": false,
+          "InPit": true,
+          "PitOut": false,
+          "Stopped": false,
+          "Status": 80,
+          "Sectors": [
+            {
+              "Stopped": false,
+              "Value": "43.529",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "43.529"
+            },
+            {
+              "Stopped": false,
+              "Value": "61.832",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                }
+              ],
+              "PreviousValue": "61.832"
+            },
+            {
+              "Stopped": false,
+              "Value": "30.474",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false,
+              "Segments": [
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2048
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                },
+                {
+                  "Status": 2064
+                }
+              ],
+              "PreviousValue": "30.474"
+            }
+          ],
+          "Speeds": {
+            "I1": {
+              "Value": "179",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "I2": {
+              "Value": "218",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "FL": {
+              "Value": "",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            },
+            "ST": {
+              "Value": "190",
+              "Status": 0,
+              "OverallFastest": false,
+              "PersonalFastest": false
+            }
+          },
+          "BestLapTime": {
+            "Value": "1:29.658",
+            "Lap": 15
+          },
+          "LastLapTime": {
+            "Value": "2:15.835",
+            "Status": 0,
+            "OverallFastest": false,
+            "PersonalFastest": false
+          },
+          "NumberOfLaps": 16,
+          "NumberOfPitStops": 4
+        }
+      },
+      "Withheld": false,
+      "_kf": true
+    },
+    "Heartbeat": {
+      "Utc": "2023-07-07T12:51:50.7356554Z",
+      "_kf": true
+    }
+  },
+  "I": "1"
+}
