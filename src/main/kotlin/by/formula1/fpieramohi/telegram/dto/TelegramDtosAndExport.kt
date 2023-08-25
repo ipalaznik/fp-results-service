@@ -75,6 +75,7 @@ enum class Driver(
     TSUNODA(22, "Юкі", "Цунода", "ЦУН", team = ALPHA_TAURI),
     RICCIARDO(3, "Даніэль", "Рыкарда", "РЫК", team = ALPHA_TAURI),
     SWICEL(39, "Робэрт", "Шварцман", "ШВА", team = FERRARI),
+    LAWSON(40, "Ліам", "Лоўсан", "ЛОЎ", team = ALPHA_TAURI),
     UNKNOWN(0, "Невядомы", "Невядомы", "НЕВ", team = Team.UNKNOWN),
 }
 
