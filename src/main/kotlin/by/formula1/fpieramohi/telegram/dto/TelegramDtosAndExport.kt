@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package by.formula1.fpieramohi.telegram.dto
 
 import by.formula1.fpieramohi.livetiming.dto.DriverLine

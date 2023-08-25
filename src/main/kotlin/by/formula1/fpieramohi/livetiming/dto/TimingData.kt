@@ -19,14 +19,6 @@ data class NegotiateResponse (
 )
 
 @Serializable
-data class StreamingRequest (
-    val H: String = "Streaming",
-    val M: String = "Subscribe",
-    val A: List<List<String>>,
-    val I: Int = 1
-)
-
-@Serializable
 data class TimingDataResponse (
     val R: TimingDataWrapper,
     val I: Int

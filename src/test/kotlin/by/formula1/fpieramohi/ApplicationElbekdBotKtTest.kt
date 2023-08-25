@@ -14,7 +14,7 @@ import kotlin.test.assertTrue
 
 data class Tweet(val timestamp: ZonedDateTime, val message: String, val mediaLink: List<String>, val account: String)
 
-class ApplicationKtTest {
+class ApplicationElbekdBotKtTest {
 
     @Test
     fun test1() {

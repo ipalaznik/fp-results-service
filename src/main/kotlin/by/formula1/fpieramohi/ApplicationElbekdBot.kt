@@ -1,8 +1,6 @@
 package by.formula1.fpieramohi
 
 import by.formula1.fpieramohi.livetiming.sendTimingsFromStreaming
-import by.formula1.fpieramohi.livetiming.subscribeToF1StreamingData
-import by.formula1.fpieramohi.telegram.dto.mapToMessageString
 import com.elbekd.bot.Bot
 import com.elbekd.bot.feature.chain.chain
 import com.elbekd.bot.model.toChatId
