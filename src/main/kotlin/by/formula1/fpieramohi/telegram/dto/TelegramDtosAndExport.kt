@@ -30,19 +30,19 @@ fun List<DriverLine>.mapTimingToResultRows(sessionPart: Int? = null): List<Resul
                 position = it.Line,
                 driver = mapNumberToDriver(it.RacingNumber.toInt()),
                 bestLapTime = it.BestLapTime.Value,
-                timeDiffToAhead = it.Stats?.get(index)?.TimeDiffToPositionAhead ?: it.TimeDiffToPositionAhead.orEmpty(),
-                timeDiffToFirst = it.Stats?.get(index)?.TimeDiffToFastest ?: it.TimeDiffToFastest.orEmpty()
+                timeDiffToAhead = it.Stats?.get(index - 1)?.TimeDiffToPositionAhead ?: it.TimeDiffToPositionAhead.orEmpty(),
+                timeDiffToFirst = it.Stats?.get(index - 1)?.TimeDiffToFastest ?: it.TimeDiffToFastest.orEmpty()
             )
         }
         .sortedBy { it.position }
-        .take(numberOfEntries.getOrDefault(sessionPart, 20))
+        .take(numberOfEntries.getOrDefault((sessionPart ?: 1) - 1, 20))
 }
 
 fun List<ResultRow>.mapToMessageString() = this.joinToString("\r\n") { mapResultRowToString(it) }
 private fun mapResultRowToString(it: ResultRow) =
-    "${it.position}.  ${it.withIndent()}${it.driver.lastname}   ${it.timing()}"
+    "${it.position}. ${it.withIndent()}${it.driver.team.emojiId} ${it.driver.lastname}   ${it.timing()}"
 
-private fun ResultRow.withIndent() = if (this.position < 10) " " else ""
+private fun ResultRow.withIndent() = if (this.position < 10) "  " else ""
 
 private fun ResultRow.timing() = if (this.position == 1) this.bestLapTime else this.timeDiffToFirst
 
@@ -74,7 +74,7 @@ enum class Driver(
     ZHOU(24, "Гуанью", "Чжоў", "ЧЖО", team = ALFA_ROMEO),
     TSUNODA(22, "Юкі", "Цунода", "ЦУН", team = ALPHA_TAURI),
     RICCIARDO(3, "Даніэль", "Рыкарда", "РЫК", team = ALPHA_TAURI),
-    SWICEL(39, "Робэрт", "Шварцман", "ШВА", team = FERRARI),
+    HIDDEN(39, "Робэрт", "Шв***ман", "ШВА", team = FERRARI),
     LAWSON(40, "Ліам", "Лоўсан", "ЛОЎ", team = ALPHA_TAURI),
     UNKNOWN(0, "Невядомы", "Невядомы", "НЕВ", team = Team.UNKNOWN),
 }
@@ -84,18 +84,19 @@ private fun mapNumberToDriver(number: Int) =
 
 enum class Team(
     val teamName: String,
-    val emojiId: String
+    val emojiId: String = "",
+    val customEmojiId: String = ""
 ) {
-    ALFA_ROMEO("Альфа Рамэа", ""),
-    ALPHA_TAURI("Альфа Таўры", ""),
-    ALPINE("Альпін", ""),
-    ASTON_MARTIN("Астан Мартын", ""),
-    FERRARI("Ферары", "5208706285255534951"),
-    HAAS("Хаас", ""),
-    MCLAREN("Макларэн", ""),
-    MERCEDES("Мэрсэдэс", ""),
-    RED_BULL("Рэд Бул", ""),
-    WILLIAMS("Ўільямс", ""),
-    UNKNOWN("Невядомы", ""),
+    ALFA_ROMEO("Альфа Рамэа", "\uD83D\uDD34"),
+    ALPHA_TAURI("Альфа Таўры", "⚪\uFE0F"),
+    ALPINE("Альпін", "\uD83D\uDFE3"),
+    ASTON_MARTIN("Астан Мартын", "\uD83D\uDFE2"),
+    FERRARI("Ферары", "\uD83D\uDD34", "5208706285255534951"),
+    HAAS("Хаас", "⚪\uFE0F"),
+    MCLAREN("Макларэн", "\uD83D\uDFE0"),
+    MERCEDES("Мэрсэдэс", "⚫\uFE0F"),
+    RED_BULL("Рэд Бул", "\uD83D\uDD35"),
+    WILLIAMS("Ўільямс", "\uD83D\uDD35"),
+    UNKNOWN("Невядомы", "\uD83D\uDD18"),
 
 }
