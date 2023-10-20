@@ -5,9 +5,9 @@ val kotlinVersion: String by project
 val logbackVersion: String by project
 
 plugins {
-    kotlin("jvm") version "1.9.10"
-    kotlin("plugin.serialization") version "1.9.10"
-    id("io.ktor.plugin") version "2.3.3"
+    kotlin("jvm") version "1.9.20"
+    kotlin("plugin.serialization") version "1.9.20"
+    id("io.ktor.plugin") version "2.3.5"
 }
 
 kotlin {
@@ -45,11 +45,11 @@ dependencies {
     implementation("com.codeborne:selenide:6.14.1")
     implementation("org.litote.kmongo:kmongo:4.9.0")
 
-    implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
+    implementation("io.github.microutils:kotlin-logging-jvm:3.0.5")
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
 
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktorVersion")
-    testImplementation(kotlin("test"))
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.8.10")
 }
 
 tasks.test {
