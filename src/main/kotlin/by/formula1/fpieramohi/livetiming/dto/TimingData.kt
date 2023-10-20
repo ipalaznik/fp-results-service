@@ -24,6 +24,8 @@ data class TimingDataResponse (
     val I: Int
 ) {
     fun extractDriverLines() = R.TimingData.Lines.values.toList()
+
+    fun extractDriverLinesByNumber() = R.TimingData.Lines
 }
 
 @Serializable

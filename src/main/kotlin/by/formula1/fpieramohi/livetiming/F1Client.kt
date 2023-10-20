@@ -79,7 +79,7 @@ private suspend fun DefaultClientWebSocketSession.handleF1Socket() {
     incoming.consumeEach { frame ->
         if (frame is Frame.Text) {
             val streamingData = frame.readText()
-            val parsedF1Data = parseF1Data(streamingData)
+            val parsedF1Data = parseF1TimingData(streamingData)
 
             parsedF1Data
                 ?.extractDriverLines()

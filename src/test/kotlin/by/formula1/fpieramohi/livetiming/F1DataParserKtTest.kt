@@ -10,7 +10,7 @@ class F1DataParserKtTest {
     fun parseF1DataShouldReturnObject() {
         val input = this.javaClass.getResource("/timingData.txt")?.readText()!!
 
-        val parseF1Data = parseF1Data(input)
+        val parseF1Data = parseF1TimingData(input)
 
         assertNotNull(parseF1Data)
         assertTrue { parseF1Data.R.TimingData.Lines.size == 20 }

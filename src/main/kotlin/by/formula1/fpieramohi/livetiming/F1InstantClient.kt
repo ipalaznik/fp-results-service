@@ -1,8 +1,7 @@
 package by.formula1.fpieramohi.livetiming
 
 import by.formula1.fpieramohi.livetiming.dto.NegotiateResponse
-import by.formula1.fpieramohi.telegram.dto.mapTimingToResultRows
-import by.formula1.fpieramohi.telegram.dto.mapToMessageString
+import by.formula1.fpieramohi.telegram.dto.*
 import com.elbekd.bot.Bot
 import com.elbekd.bot.model.toChatId
 import com.elbekd.bot.types.Message
@@ -23,10 +22,17 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
 import mu.KotlinLogging
+import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.TimeUnit
 import kotlin.time.Duration.Companion.seconds
 
 private val logger = KotlinLogging.logger {}
+private var currentResults = ConcurrentHashMap<Int, ResultRow>()
+// val client = KMongo.createClient()
+//        val database = client.getDatabase("test")
+//        val col = database.getCollection<Tweet>()
+//
+//        col.insertOne(Tweet(ZonedDateTime.now(), "Bottas 1", emptyList(), "Alfa Romeo"))
 
 fun sendTimingsFromStreaming(bot: Bot, message: Message) {
     val client = createHttpClient()
@@ -86,13 +92,15 @@ private suspend fun DefaultClientWebSocketSession.handleF1Socket(bot: Bot, messa
     incoming.consumeEach { frame ->
         if (frame is Frame.Text) {
             val streamingData = frame.readText()
-            val parsedF1Data = parseF1Data(streamingData)
+            try {
+                parseAndSendResults(streamingData, bot, message)
+            }
+            catch (e: Exception) {
+                println("error with parsing timing data %s".format(streamingData))
+                println("%s".format(e))
+                logger.error { e }
 
-            val response = parsedF1Data
-                ?.extractDriverLines()
-                ?.mapTimingToResultRows(parsedF1Data.R.TimingData.SessionPart)
-                ?.mapToMessageString()
-            receiveAndSendTimings(bot, message, response)
+            }
         } else {
             logger.warn { "non-text message: ${frame.data}" }
 //            receiveAndSendTimings(bot, message, "No results selected from DB, I'm sorry!")
@@ -100,11 +108,63 @@ private suspend fun DefaultClientWebSocketSession.handleF1Socket(bot: Bot, messa
     }
 }
 
+private suspend fun parseAndSendResults(
+    streamingData: String,
+    bot: Bot,
+    message: Message
+) {
+    if (streamingData.contains("\"TimingData\"") && streamingData.contains("\"R\"")) {
+        //            if (parsedF1Data != null) {
+        val parsedF1Data = parseF1TimingData(streamingData)
+
+        //                val response = parsedF1Data
+        //                    .extractDriverLines()
+        //                    .mapTimingToResultRows(parsedF1Data.R.TimingData.SessionPart)
+        //                    .mapToMessageString()
+        //                receiveAndSendTimings(bot, message, response)
+
+        parsedF1Data
+            .extractDriverLinesByNumber()
+            .mapValues { it.value.mapTimingToResultRow(parsedF1Data.R.TimingData.SessionPart) }
+            .let { currentResults.putAll(it) }
+        receiveAndSendTimings(bot, message)
+    } else if (streamingData.contains("\"TimingData\"") && streamingData.contains("\"Streaming\"")) {
+        val parsedF1Data = parseF1PartialTimingData(streamingData)
+        parsedF1Data?.Lines
+            ?.mapValues {
+                val merged = currentResults[it.key]!!.merge(it.value)
+                println("Merging line ${it.key} with value: ${it.value}")
+                println("Merged value: $merged")
+                merged
+            }
+            ?.forEach {
+                currentResults[it.key] = it.value
+            }
+        receiveAndSendTimings(bot, message)
+    } else {
+        println("Websocket received text: $streamingData")
+    }
+}
+
+private fun mapCurrentResultsToText() = currentResults
+    .values
+    .toList()
+    .sortedBy { it.position }
+    .mapToMessageString()
+
 private suspend fun receiveAndSendTimings(bot: Bot, message: Message, resultText: String?) {
-    if (resultText != null) {
+    if (!resultText.isNullOrBlank()) {
         bot.sendMessage(message.chat.id.toChatId(), resultText)
         withContext(Dispatchers.IO) {
             TimeUnit.SECONDS.sleep(5)
         }
     }
+}
+
+private suspend fun receiveAndSendTimings(bot: Bot, message: Message) {
+    val resultText = mapCurrentResultsToText()
+    bot.sendMessage(message.chat.id.toChatId(), resultText)
+//    withContext(Dispatchers.IO) {
+//        TimeUnit.SECONDS.sleep(5)
+//    }
 }

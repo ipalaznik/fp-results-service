@@ -3,6 +3,7 @@
 package by.formula1.fpieramohi.telegram.dto
 
 import by.formula1.fpieramohi.livetiming.dto.DriverLine
+import by.formula1.fpieramohi.livetiming.dto.DriverLinePartial
 import by.formula1.fpieramohi.telegram.dto.Team.*
 import mu.KotlinLogging
 
@@ -12,7 +13,17 @@ data class ResultRow(
     val bestLapTime: String,
     val timeDiffToAhead: String,
     val timeDiffToFirst: String,
-)
+) {
+    fun merge(partialDriverLine: DriverLinePartial): ResultRow {
+        return ResultRow(
+            partialDriverLine.Line ?: position,
+            driver,
+            partialDriverLine.BestLapTime?.Value ?: bestLapTime,
+            partialDriverLine.Stats?.get(0)?.TimeDiffToPositionAhead ?: partialDriverLine.TimeDiffToPositionAhead ?: timeDiffToAhead,
+            partialDriverLine.Stats?.get(0)?.TimeDiffToFastest ?: partialDriverLine.TimeDiffToFastest ?: timeDiffToFirst
+        )
+    }
+}
 
 private val logger = KotlinLogging.logger {}
 
@@ -21,26 +32,30 @@ private val numberOfEntries = mapOf(
     1 to 15,
     2 to 10
 )
+
 fun List<DriverLine>.mapTimingToResultRows(sessionPart: Int? = null): List<ResultRow> {
     logger.info { "ResultRows: $this" }
     val index = sessionPart ?: 0
     return this
-        .map {
-            ResultRow(
-                position = it.Line,
-                driver = mapNumberToDriver(it.RacingNumber.toInt()),
-                bestLapTime = it.BestLapTime.Value,
-                timeDiffToAhead = it.Stats?.get(index - 1)?.TimeDiffToPositionAhead ?: it.TimeDiffToPositionAhead.orEmpty(),
-                timeDiffToFirst = it.Stats?.get(index - 1)?.TimeDiffToFastest ?: it.TimeDiffToFastest.orEmpty()
-            )
-        }
+        .map { it.mapTimingToResultRow(sessionPart) }
         .sortedBy { it.position }
         .take(numberOfEntries.getOrDefault((sessionPart ?: 1) - 1, 20))
 }
 
-fun List<ResultRow>.mapToMessageString() = this.joinToString("\r\n") { mapResultRowToString(it) }
+fun DriverLine.mapTimingToResultRow(sessionPart: Int? = null): ResultRow {
+    val index = sessionPart ?: 0
+    return ResultRow(
+        position = this.Line,
+        driver = mapNumberToDriver(this.RacingNumber.toInt()),
+        bestLapTime = this.BestLapTime.Value,
+        timeDiffToAhead = this.Stats?.get(index - 1)?.TimeDiffToPositionAhead ?: this.TimeDiffToPositionAhead.orEmpty(),
+        timeDiffToFirst = this.Stats?.get(index - 1)?.TimeDiffToFastest ?: this.TimeDiffToFastest.orEmpty()
+    )
+}
+
+fun Collection<ResultRow>.mapToMessageString() = this.joinToString("\r\n") { mapResultRowToString(it) }
 private fun mapResultRowToString(it: ResultRow) =
-    "${it.position}. ${it.withIndent()}${it.driver.team.emojiId} ${it.driver.lastname}   ${it.timing()}"
+        "${it.position}. ${it.withIndent()}${it.driver.team.emojiId} ${it.driver.lastname}   ${it.timing()}"
 
 private fun ResultRow.withIndent() = if (this.position < 10) "  " else ""
 
@@ -87,16 +102,16 @@ enum class Team(
     val emojiId: String = "",
     val customEmojiId: String = ""
 ) {
-    ALFA_ROMEO("Альфа Рамэа", "\uD83D\uDD34"),
-    ALPHA_TAURI("Альфа Таўры", "⚪\uFE0F"),
-    ALPINE("Альпін", "\uD83D\uDFE3"),
-    ASTON_MARTIN("Астан Мартын", "\uD83D\uDFE2"),
-    FERRARI("Ферары", "\uD83D\uDD34", "5208706285255534951"),
-    HAAS("Хаас", "⚪\uFE0F"),
-    MCLAREN("Макларэн", "\uD83D\uDFE0"),
-    MERCEDES("Мэрсэдэс", "⚫\uFE0F"),
-    RED_BULL("Рэд Бул", "\uD83D\uDD35"),
-    WILLIAMS("Ўільямс", "\uD83D\uDD35"),
-    UNKNOWN("Невядомы", "\uD83D\uDD18"),
+    RED_BULL("Рэд Бул", "\u0031\u20E3"),
+    FERRARI("Ферары", "\u0032\u20E3", "5208706285255534951"),
+    MERCEDES("Мэрсэдэс", "\u0033\u20E3"),
+    ALPINE("Альпін", "\u0034\u20E3"),
+    MCLAREN("Макларэн", "\u0035\u20E3"),
+    ALFA_ROMEO("Альфа Рамэа", "\u0036\u20E3"),
+    ASTON_MARTIN("Астан Мартын", "\u0037\u20E3"),
+    HAAS("Хаас", "\u0038\u20E3"),
+    ALPHA_TAURI("Альфа Таўры", "\u0039\u20E3"),
+    WILLIAMS("Ўільямс", "\uD83D\uDD1F"),
+    UNKNOWN("Невядомы", "\u0031\u20E3"),
 
 }

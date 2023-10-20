@@ -18,6 +18,9 @@ fun main() {
     bot.chain("/instantresults") { message -> sendTimingsFromStreaming(bot, message) }
         .build()
 
+    bot.chain("/practise 1") { message -> sendTimingsFromStreaming(bot, message) }
+        .build()
+
     bot.chain("/debug") { message -> bot.sendMessage(message.chat.id.toChatId(), "Дашлі эмодзі для дэбагу!") }
         .then { message -> bot.sendMessage(message.chat.id.toChatId(), debug(message)) }
         .build()
