@@ -2,9 +2,6 @@ package by.formula1.fpieramohi.livetiming
 
 import by.formula1.fpieramohi.livetiming.dto.NegotiateResponse
 import by.formula1.fpieramohi.telegram.dto.*
-import com.elbekd.bot.Bot
-import com.elbekd.bot.model.toChatId
-import com.elbekd.bot.types.Message
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.plugins.*
@@ -15,26 +12,21 @@ import io.ktor.client.statement.*
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.websocket.*
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.channels.consumeEach
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
 import mu.KotlinLogging
 import java.util.concurrent.ConcurrentHashMap
-import java.util.concurrent.TimeUnit
 import kotlin.time.Duration.Companion.seconds
 
 private val logger = KotlinLogging.logger {}
 private var currentResults = ConcurrentHashMap<Int, ResultRow>()
-// val client = KMongo.createClient()
-//        val database = client.getDatabase("test")
-//        val col = database.getCollection<Tweet>()
-//
-//        col.insertOne(Tweet(ZonedDateTime.now(), "Bottas 1", emptyList(), "Alfa Romeo"))
+//val client = KMongo.createClient()
+//val database: MongoDatabase = client.getDatabase("test")
+//val collection = database.getCollection<String>()
 
-fun sendTimingsFromStreaming(bot: Bot, message: Message) {
+fun readTimingsFromStreaming() {
     val client = createHttpClient()
 
     runBlocking {
@@ -42,7 +34,7 @@ fun sendTimingsFromStreaming(bot: Bot, message: Message) {
         while (shouldReconnect) {
             try {
                 setupWebsocket(client) {
-                    handleF1Socket(bot, message)
+                    handleF1Socket()
                 }
             } catch (e: NoTransformationFoundException) {
                 logger.error { e }
@@ -86,14 +78,14 @@ private suspend fun setupWebsocket(client: HttpClient, handler: suspend DefaultC
     )
 }
 
-private suspend fun DefaultClientWebSocketSession.handleF1Socket(bot: Bot, message: Message) {
+private suspend fun DefaultClientWebSocketSession.handleF1Socket() {
     send(F1_STREAMING_REQUEST)
 
     incoming.consumeEach { frame ->
         if (frame is Frame.Text) {
             val streamingData = frame.readText()
             try {
-                parseAndSendResults(streamingData, bot, message)
+                parseAndSendResults(streamingData)
             }
             catch (e: Exception) {
                 println("error with parsing timing data %s".format(streamingData))
@@ -108,12 +100,10 @@ private suspend fun DefaultClientWebSocketSession.handleF1Socket(bot: Bot, messa
     }
 }
 
-private suspend fun parseAndSendResults(
-    streamingData: String,
-    bot: Bot,
-    message: Message
-) {
+private suspend fun parseAndSendResults(streamingData: String) {
     if (streamingData.contains("\"TimingData\"") && streamingData.contains("\"R\"")) {
+//        collection.insertOne(streamingData)
+
         //            if (parsedF1Data != null) {
         val parsedF1Data = parseF1TimingData(streamingData)
 
@@ -127,44 +117,34 @@ private suspend fun parseAndSendResults(
             .extractDriverLinesByNumber()
             .mapValues { it.value.mapTimingToResultRow(parsedF1Data.R.TimingData.SessionPart) }
             .let { currentResults.putAll(it) }
-        receiveAndSendTimings(bot, message)
     } else if (streamingData.contains("\"TimingData\"") && streamingData.contains("\"Streaming\"")) {
+//        collection.insertOne(streamingData)
         val parsedF1Data = parseF1PartialTimingData(streamingData)
+        var isUpdated = false
+
         parsedF1Data?.Lines
-            ?.mapValues {
-                val merged = currentResults[it.key]!!.merge(it.value)
-                println("Merging line ${it.key} with value: ${it.value}")
-                println("Merged value: $merged")
-                merged
-            }
             ?.forEach {
-                currentResults[it.key] = it.value
+                val part = parsedF1Data.SessionPart
+                val currentResult = currentResults[it.key]
+                val merged = currentResult!!.merge(it.value, part)
+                if (merged != currentResult) {
+                    isUpdated = true
+                    currentResults[it.key] = merged
+                    println("Updating line ${it.key} with new value: $merged")
+                }
             }
-        receiveAndSendTimings(bot, message)
+
     } else {
         println("Websocket received text: $streamingData")
     }
 }
 
-private fun mapCurrentResultsToText() = currentResults
-    .values
-    .toList()
-    .sortedBy { it.position }
-    .mapToMessageString()
-
-private suspend fun receiveAndSendTimings(bot: Bot, message: Message, resultText: String?) {
-    if (!resultText.isNullOrBlank()) {
-        bot.sendMessage(message.chat.id.toChatId(), resultText)
-        withContext(Dispatchers.IO) {
-            TimeUnit.SECONDS.sleep(5)
-        }
-    }
-}
-
-private suspend fun receiveAndSendTimings(bot: Bot, message: Message) {
-    val resultText = mapCurrentResultsToText()
-    bot.sendMessage(message.chat.id.toChatId(), resultText)
-//    withContext(Dispatchers.IO) {
-//        TimeUnit.SECONDS.sleep(5)
-//    }
+fun mapCurrentResultsToText(): String {
+    val results = currentResults
+        .values
+        .toList()
+        .sortedBy { it.position }
+        .mapToMessageString()
+    println(results)
+    return results.ifEmpty { "No results yet" }
 }

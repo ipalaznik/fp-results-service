@@ -32,7 +32,8 @@ data class TimingDataPartial (
 
 @Serializable
 data class DriverLinePartial (
-    var Stats: List<StatsTime>? = null,
+//    var Stats: List<StatsTime>? = null,
+    var Stats: Map<Int, StatsTime>? = null,
     var TimeDiffToFastest: String? = null,
     var TimeDiffToPositionAhead: String? = null,
     val Line: Int? = null,
@@ -47,6 +48,7 @@ data class DriverLinePartial (
 //    val Sectors: List<Sector>,
 //    val Speeds: List<Speed>,
     val BestLapTime: BestLapTime? = null,
+    val BestLapTimes: Map<Int, BestLapTime>? = null,
     val LastLapTime: LastLapTime? = null,
 //    val NumberOfLaps: Int,
 //    val NumberOfPitStops: Int,

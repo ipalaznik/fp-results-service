@@ -14,13 +14,13 @@ data class ResultRow(
     val timeDiffToAhead: String,
     val timeDiffToFirst: String,
 ) {
-    fun merge(partialDriverLine: DriverLinePartial): ResultRow {
+    fun merge(partialDriverLine: DriverLinePartial, part: Int?): ResultRow {
         return ResultRow(
             partialDriverLine.Line ?: position,
             driver,
-            partialDriverLine.BestLapTime?.Value ?: bestLapTime,
-            partialDriverLine.Stats?.get(0)?.TimeDiffToPositionAhead ?: partialDriverLine.TimeDiffToPositionAhead ?: timeDiffToAhead,
-            partialDriverLine.Stats?.get(0)?.TimeDiffToFastest ?: partialDriverLine.TimeDiffToFastest ?: timeDiffToFirst
+            partialDriverLine.BestLapTime?.Value ?: partialDriverLine.BestLapTimes?.getOrDefault(part, null)?.Value ?: bestLapTime,
+            partialDriverLine.Stats?.get(part)?.TimeDiffToPositionAhead ?: partialDriverLine.TimeDiffToPositionAhead ?: timeDiffToAhead,
+            partialDriverLine.Stats?.get(part)?.TimeDiffToFastest ?: partialDriverLine.TimeDiffToFastest ?: timeDiffToFirst
         )
     }
 }
@@ -70,7 +70,7 @@ enum class Driver(
     val team: Team
 ) {
     VERSTAPPEN(1, "Макс", "Верстапен", "ВЕР", team = RED_BULL),
-    PEREZ(11, "Серхіа", "Перэс", "ПЕР", team = RED_BULL),
+    PEREZ(11, "Серхіа", "Перэс", "ПЕР", team = RED_BULL, emojiId = "\uD83C\uDDF2\uD83C\uDDFD"),
     ALONSO(14, "Фернанда", "Алонса", "АЛО", team = ASTON_MARTIN),
     HAMILTON(44, "Льюіс", "Гэмілтан", "ГЭМ", team = MERCEDES),
     SAINZ(55, "Карлас", "Сайнс", "САЙ", team = FERRARI),
@@ -95,7 +95,8 @@ enum class Driver(
 }
 
 private fun mapNumberToDriver(number: Int) =
-    Driver.entries.first { it.number == number }
+    Driver.entries.find { it.number == number }
+        ?: Driver.UNKNOWN
 
 enum class Team(
     val teamName: String,
@@ -112,6 +113,6 @@ enum class Team(
     HAAS("Хаас", "\u0038\u20E3"),
     ALPHA_TAURI("Альфа Таўры", "\u0039\u20E3"),
     WILLIAMS("Ўільямс", "\uD83D\uDD1F"),
-    UNKNOWN("Невядомы", "\u0031\u20E3"),
+    UNKNOWN("Невядомы", "\u2757"),
 
 }

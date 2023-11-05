@@ -2,6 +2,7 @@
 
 package by.formula1.fpieramohi.livetiming.dto
 
+import com.fasterxml.jackson.databind.JsonNode
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -31,6 +32,10 @@ data class TimingDataResponse (
 @Serializable
 data class TimingDataWrapper (
     val TimingData: TimingData,
+//    val Heartbeat: Map<String, String>,
+//    val TimingStats: Map<String, >,
+//    val TimingAppData: Map<String, String>,
+//    val DriverList: Map<String, String>,
 )
 
 @Serializable
@@ -58,8 +63,8 @@ data class DriverLine (
 //    val Speeds: List<Speed>,
     val BestLapTime: BestLapTime,
     val LastLapTime: LastLapTime,
-//    val NumberOfLaps: Int,
-//    val NumberOfPitStops: Int,
+    val NumberOfLaps: Int? = null,
+    val NumberOfPitStops: Int? = null,
 
 )
 

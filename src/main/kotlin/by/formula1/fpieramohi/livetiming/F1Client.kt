@@ -81,9 +81,8 @@ private suspend fun DefaultClientWebSocketSession.handleF1Socket() {
             val streamingData = frame.readText()
             val parsedF1Data = parseF1TimingData(streamingData)
 
-            parsedF1Data
-                ?.extractDriverLines()
-                ?.mapTimingToResultRows(parsedF1Data.R.TimingData.SessionPart)
+            parsedF1Data.extractDriverLines()
+                .mapTimingToResultRows(parsedF1Data.R.TimingData.SessionPart)
 //                ?.also { saveResultRows(it) }
         } else {
             logger.warn { "non-text message: ${frame.data}" }
