@@ -1,12 +1,10 @@
 package by.formula1.fpieramohi
 
-import by.formula1.fpieramohi.livetiming.readTimingsFromStreaming
 import by.formula1.fpieramohi.livetiming.mapCurrentResultsToText
+import by.formula1.fpieramohi.livetiming.readTimingsFromStreaming
 import com.elbekd.bot.Bot
-import com.elbekd.bot.feature.chain.chain
 import com.elbekd.bot.model.toChatId
 import com.elbekd.bot.types.Message
-import com.elbekd.bot.types.MessageEntity
 
 fun main() {
     val token = "995210316:AAFIzn6mH317Y_-MoV5S4rxN8bQdgNS6tuw"

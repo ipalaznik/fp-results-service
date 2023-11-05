@@ -35,11 +35,11 @@ private val numberOfEntries = mapOf(
 
 fun List<DriverLine>.mapTimingToResultRows(sessionPart: Int? = null): List<ResultRow> {
     logger.info { "ResultRows: $this" }
-    val index = sessionPart ?: 0
+    val index = (sessionPart ?: 1) - 1
     return this
         .map { it.mapTimingToResultRow(sessionPart) }
         .sortedBy { it.position }
-        .take(numberOfEntries.getOrDefault((sessionPart ?: 1) - 1, 20))
+        .take(numberOfEntries.getOrDefault(index, 20))
 }
 
 fun DriverLine.mapTimingToResultRow(sessionPart: Int? = null): ResultRow {

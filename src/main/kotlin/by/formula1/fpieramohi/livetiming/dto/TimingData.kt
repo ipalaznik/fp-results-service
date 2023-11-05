@@ -2,7 +2,6 @@
 
 package by.formula1.fpieramohi.livetiming.dto
 
-import com.fasterxml.jackson.databind.JsonNode
 import kotlinx.serialization.Serializable
 
 @Serializable
