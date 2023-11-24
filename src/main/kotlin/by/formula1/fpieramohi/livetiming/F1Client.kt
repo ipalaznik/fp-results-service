@@ -17,9 +17,15 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.json.Json
 import mu.KotlinLogging
+import java.time.LocalDateTime
 import kotlin.time.Duration.Companion.seconds
 
 private val logger = KotlinLogging.logger {}
+
+data class Timeline (
+    val data: String,
+    val timestamp: LocalDateTime
+)
 
 fun subscribeToF1StreamingData() {
     val client = createHttpClient()

@@ -64,7 +64,9 @@ data class DriverLine (
     val LastLapTime: LastLapTime,
     val NumberOfLaps: Int? = null,
     val NumberOfPitStops: Int? = null,
-
+    val GapToLeader: String? = null,
+    val IntervalToPositionAhead: BestLapTime? = null,
+//    "GapToLeader":"+15.682","IntervalToPositionAhead":{"Value":"+0.466"}}}}
 )
 
 @Serializable
@@ -75,14 +77,14 @@ data class StatsTime (
 
 @Serializable
 data class BestLapTime (
-    val Value: String,
+    val Value: String? = null,
 //    val Lap: Int?
 )
 
 @Serializable
 data class LastLapTime (
-    val Value: String,
+    val Value: String? = null,
 //    val Status: Int,
-//    val OverallFastest: Boolean,
-//    val PersonalFastest: Boolean
+    val OverallFastest: Boolean? = null,
+    val PersonalFastest: Boolean? = null
 )

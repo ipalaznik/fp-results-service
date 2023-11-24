@@ -50,6 +50,8 @@ data class DriverLinePartial (
     val BestLapTime: BestLapTime? = null,
     val BestLapTimes: Map<Int, BestLapTime>? = null,
     val LastLapTime: LastLapTime? = null,
+    val GapToLeader: String? = null,
+    val IntervalToPositionAhead: BestLapTime? = null,
 //    val NumberOfLaps: Int,
 //    val NumberOfPitStops: Int,
 )

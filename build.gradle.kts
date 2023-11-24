@@ -39,6 +39,7 @@ dependencies {
     implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 
     implementation("com.github.elbekD:kt-telegram-bot:2.2.0")
     implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.1.0")
@@ -47,6 +48,8 @@ dependencies {
 
     implementation("io.github.microutils:kotlin-logging-jvm:3.0.5")
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
+// https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-datetime
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
 
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktorVersion")
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.8.10")

@@ -2,6 +2,7 @@ package by.formula1.fpieramohi.livetiming
 
 import by.formula1.fpieramohi.livetiming.dto.NegotiateResponse
 import by.formula1.fpieramohi.telegram.dto.*
+import com.mongodb.client.MongoDatabase
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.plugins.*
@@ -17,14 +18,21 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.json.Json
 import mu.KotlinLogging
+import org.litote.kmongo.KMongo
+import org.litote.kmongo.getCollection
+import org.litote.kmongo.save
+import java.time.LocalDateTime
 import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.atomic.AtomicBoolean
 import kotlin.time.Duration.Companion.seconds
 
 private val logger = KotlinLogging.logger {}
 private var currentResults = ConcurrentHashMap<Int, ResultRow>()
-//val client = KMongo.createClient()
-//val database: MongoDatabase = client.getDatabase("test")
-//val collection = database.getCollection<String>()
+var isUpdated = AtomicBoolean(false)
+
+val client = KMongo.createClient()
+val database: MongoDatabase = client.getDatabase("test")
+val timelineCollection = database.getCollection<Timeline>("timeline")
 
 fun readTimingsFromStreaming() {
     val client = createHttpClient()
@@ -85,6 +93,7 @@ private suspend fun DefaultClientWebSocketSession.handleF1Socket() {
         if (frame is Frame.Text) {
             val streamingData = frame.readText()
             try {
+//                timelineCollection.save(Timeline(streamingData, LocalDateTime.now()))
                 parseAndSendResults(streamingData)
             }
             catch (e: Exception) {
@@ -120,15 +129,15 @@ private suspend fun parseAndSendResults(streamingData: String) {
     } else if (streamingData.contains("\"TimingData\"") && streamingData.contains("\"Streaming\"")) {
 //        collection.insertOne(streamingData)
         val parsedF1Data = parseF1PartialTimingData(streamingData)
-        var isUpdated = false
 
         parsedF1Data?.Lines
             ?.forEach {
                 val part = parsedF1Data.SessionPart
+//                val part = 2
                 val currentResult = currentResults[it.key]
                 val merged = currentResult!!.merge(it.value, part)
                 if (merged != currentResult) {
-                    isUpdated = true
+                    isUpdated.set(true)
                     currentResults[it.key] = merged
                     println("Updating line ${it.key} with new value: $merged")
                 }
@@ -147,4 +156,30 @@ fun mapCurrentResultsToText(): String {
         .mapToMessageString()
     println(results)
     return results.ifEmpty { "No results yet" }
+}
+
+fun mapFPStreamingTimesToText(): String {
+    val results = currentResults
+        .values
+        .toList()
+        .sortedBy { it.position }
+        .mapToFPStreamingString()
+    println(results)
+    return results.ifEmpty { "No results yet" }
+}
+
+fun manualUpdateForTestSake() {
+    val first = currentResults[11]
+    first?.gapToLeader = "${LocalDateTime.now()}"
+//    first?.intervalToAhead = "${LocalDateTime.now()}"
+    isUpdated.set(true)
+}
+
+fun mapCurrentRaceResultsToText(withGap: Boolean = true): String {
+    val results = currentResults
+        .values
+        .toList()
+        .sortedBy { it.position }
+        .mapRaceToMessageString(withGap)
+    return results.ifEmpty { "Пакуль вынікаў няма" }
 }
