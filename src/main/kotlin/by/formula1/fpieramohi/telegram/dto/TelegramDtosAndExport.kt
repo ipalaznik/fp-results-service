@@ -129,8 +129,19 @@ enum class Driver(
     ZHOU(24, "Гуанью", "Чжоў", "ЧЖО", "\uD83C\uDDE8\uD83C\uDDF3", team = ALFA_ROMEO),
     TSUNODA(22, "Юкі", "Цунода", "ЦУН", "\uD83C\uDDEF\uD83C\uDDF5", team = ALPHA_TAURI),
     RICCIARDO(3, "Даніэль", "Рыкарда", "РЫК", "\uD83C\uDDE6\uD83C\uDDFA", team = ALPHA_TAURI),
+
+
     HIDDEN(39, "Робэрт", "Шв***ман", "ШВА", team = FERRARI),
     LAWSON(40, "Ліам", "Лоўсан", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    DRUGOVICH(34, "Феліпэ", "Другавіч", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    BEARMAN(50, "Олівер", "Берман", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    DOOHAN(61, "Джэк", "Духан", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    OWARD(29, "Пата", "О'Уорд", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    VESTI(42, "Фрэдэрык", "Весці", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    DENNIS(36, "Джэйк", "Дэніс", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    HADJAR(37, "Ісак", "Хаджар", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    POURCHAIRE(98, "Тэа", "Пуршэр", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
+    OSULLIVAN(45, "Зак", "Саліван", "ЛОЎ", "\uD83C\uDDF3\uD83C\uDDFF", team = ALPHA_TAURI),
     UNKNOWN(0, "Невядомы", "Невядомы", "НЕВ", team = Team.UNKNOWN),
 }
 

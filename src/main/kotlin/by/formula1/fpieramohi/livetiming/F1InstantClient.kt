@@ -132,8 +132,8 @@ private suspend fun parseAndSendResults(streamingData: String) {
 
         parsedF1Data?.Lines
             ?.forEach {
-                val part = parsedF1Data.SessionPart
-//                val part = 2
+//                val part = parsedF1Data.SessionPart
+                val part = 1
                 val currentResult = currentResults[it.key]
                 val merged = currentResult!!.merge(it.value, part)
                 if (merged != currentResult) {
@@ -166,13 +166,6 @@ fun mapFPStreamingTimesToText(): String {
         .mapToFPStreamingString()
     println(results)
     return results.ifEmpty { "No results yet" }
-}
-
-fun manualUpdateForTestSake() {
-    val first = currentResults[11]
-    first?.gapToLeader = "${LocalDateTime.now()}"
-//    first?.intervalToAhead = "${LocalDateTime.now()}"
-    isUpdated.set(true)
 }
 
 fun mapCurrentRaceResultsToText(withGap: Boolean = true): String {

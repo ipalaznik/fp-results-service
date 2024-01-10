@@ -121,8 +121,8 @@ private suspend fun subscribeToResults(
             println("isUpdated = ${isUpdated.get()}")
             if (messageId == null) {
 //                val timingMessage = bot.sendMessage(message.first.chatId(), mapCurrentRaceResultsToText())
-                val timingMessage = bot.sendMessage(streamingChannelId, mapCurrentRaceResultsToText())
-//                val timingMessage = bot.sendMessage(streamingChannelId, createSessionText(session))
+//                val timingMessage = bot.sendMessage(streamingChannelId, mapCurrentResultsToText())
+                val timingMessage = bot.sendMessage(streamingChannelId, createSessionText(session))
                 messageId = timingMessage.messageId
             } else {
                 bot.editMessageText(streamingChannelId, messageId, text = createSessionText(session))
@@ -135,11 +135,13 @@ private suspend fun subscribeToResults(
     }
 }
 
+//${mapCurrentRaceResultsToText()}
+
 private fun createSessionText(session: Session) = """
     ${session.text}
 
-${mapCurrentRaceResultsToText()}
+${mapCurrentResultsToText()}
 
-Абноўлена: ${LocalDateTime.now().format(ISO_LOCAL_TIME)}""".trimIndent()
+Абноўлена: ${LocalDateTime.now().plusHours(1).format(ISO_LOCAL_TIME)}""".trimIndent()
 
 private fun Message.chatId() = this.chat.id.toChatId()

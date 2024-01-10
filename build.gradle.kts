@@ -5,9 +5,9 @@ val kotlinVersion: String by project
 val logbackVersion: String by project
 
 plugins {
-    kotlin("jvm") version "1.9.20"
-    kotlin("plugin.serialization") version "1.9.20"
-    id("io.ktor.plugin") version "2.3.5"
+    kotlin("jvm") version "1.9.22"
+    kotlin("plugin.serialization") version "1.9.22"
+    id("io.ktor.plugin") version "2.3.7"
 }
 
 kotlin {
@@ -43,7 +43,7 @@ dependencies {
 
     implementation("com.github.elbekD:kt-telegram-bot:2.2.0")
     implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.1.0")
-    implementation("com.codeborne:selenide:6.14.1")
+    implementation("com.codeborne:selenide:7.0.4")
     implementation("org.litote.kmongo:kmongo:4.9.0")
 
     implementation("io.github.microutils:kotlin-logging-jvm:3.0.5")
